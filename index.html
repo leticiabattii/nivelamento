@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionStore</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f8cdda;
+}
+
+.banner {
+  background: linear-gradient(to right, #f8cdda, #641d40);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-banner {
+  background-color: white;
+  color: #641d40;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.btn-banner:hover {
+  background-color: #f8cdda;
+  color: white;
+}
+
+.produtos {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.card-produto {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-produto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-produto h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+.card-produto p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-produto button {
+  padding: 10px 20px;
+  background-color: #641d40;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-produto button:hover {
+  background-color: #f8cdda;
+  color: #1d2b64;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AIL Wear</div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Novidades</a></li>
+        <li><a href="#">Promoções</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Moda acessível e estilosa</h1>
+    <p>Descubra as novas tendências com até 50% OFF</p>
+    <a href="#" class="btn-banner">Comprar agora</a>
+  </section>
+
+  <section class="produtos">
+    <h2>Destaques</h2>
+    <div class="grid-produtos">
+      <div class="card-produto">
+        <img src="https://oqvestir.fbitsstatic.net/img/p/vestido-curto-caribe-laranja-202192/560612.jpg?w=1600&h=2133&v=no-value" alt="Vestido Floral">
+        <h3>Vestido Curto Tropical</h3>
+        <p>R$ 89,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card-produto">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSCDR9hFdAtF9eI5Z0zYLCGp3uJLdVHfiOm_kCvJ_ynWpgUaIggob1wIYzkK7pMuLGDSO5AnlzmVAYdrnkO2swmv8VwSjBI56bMy-m7JypqPF4SanBuEfOqLHdUXktBQvs2wcRYZ822MBg&usqp=CAc" alt="Blusa Manga Longa">
+        <h3>Blusa Manga Longa</h3>
+        <p>R$ 59,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card-produto">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR0Q8dpw8SRtcJOT4Uj3Mnkg0Q9lKUnpgYhDIzNkahtm4vjr9HUK3VDUdsCCKSAF-AmdJ8eFRd7qxNUFV2OWTWpIcMqKDoXWH8OZ6qKMnA&usqp=CAc" alt="Calça Wide Leg">
+        <h3>Calça Wide Leg</h3>
+        <p>R$ 129,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Alunos: Arthur, Isadora e Letícia</p>
+  </footer>
+</body>
+</html>
